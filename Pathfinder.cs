@@ -9,7 +9,7 @@
             _logger = logger;
         }
 
-        public void SendMessage(string message)
+        public void Find(string message)
         {
             _logger.WriteLog(message);
         }

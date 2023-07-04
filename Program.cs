@@ -17,11 +17,11 @@
             Pathfinder pathfinder4 = new Pathfinder(_superSecureLogWritter);
 
 
-            pathfinder0.SendMessage("1");
-            pathfinder1.SendMessage("2");
-            pathfinder2.SendMessage("3");
-            pathfinder3.SendMessage("4");
-            pathfinder4.SendMessage("5");
+            pathfinder0.Find("1");
+            pathfinder1.Find("2");
+            pathfinder2.Find("3");
+            pathfinder3.Find("4");
+            pathfinder4.Find("5");
             
         }
     }
