@@ -1,8 +1,8 @@
 ﻿namespace NapilnikTask3
 {
-    class FileLogWritter
+    class FileLogWritter : ILogger
     {
-        public virtual void WriteError(string message)
+        public void WriteLog(string message)
         {
             File.WriteAllText("log.txt", message);
         }
