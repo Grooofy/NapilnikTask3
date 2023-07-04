@@ -2,9 +2,9 @@
 {
     class SecureConsoleLogWritter : ILogger
     {
-        private FileLogWritter _writer;
+        private ConsoleLogWritter _writer;
 
-        public SecureConsoleLogWritter(FileLogWritter writer)
+        public SecureConsoleLogWritter(ConsoleLogWritter writer)
         {
             _writer = writer;
         }

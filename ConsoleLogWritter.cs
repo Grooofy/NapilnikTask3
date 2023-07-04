@@ -1,8 +1,8 @@
 ﻿namespace NapilnikTask3
 {
-    class ConsoleLogWritter
+    class ConsoleLogWritter : ILogger
     {
-        public virtual void WriteError(string message)
+        public void WriteLog(string message)
         {
             Console.WriteLine(message);
         }
