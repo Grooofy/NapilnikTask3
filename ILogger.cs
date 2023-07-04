@@ -1,6 +1,6 @@
 ﻿namespace NapilnikTask3
 {
-    interface ILogger
+    public interface ILogger
     {
         void WriteLog(string message);
     }

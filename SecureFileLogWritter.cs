@@ -1,6 +1,6 @@
 ﻿namespace NapilnikTask3
 {
-    class SecureFileLogWritter : ILogger
+    public class SecureFileLogWritter : ILogger
     {
         private FileLogWritter _writter;
 
@@ -11,7 +11,10 @@
 
         public void WriteLog(string message)
         {
-            throw new NotImplementedException();
+            if (DateTime.Now.DayOfWeek == DayOfWeek.Friday)
+            {
+                _writter.WriteLog(message);
+            }
         }
     }
 }

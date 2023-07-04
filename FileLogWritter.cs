@@ -1,6 +1,6 @@
 ﻿namespace NapilnikTask3
 {
-    class FileLogWritter : ILogger
+    public class FileLogWritter : ILogger
     {
         public void WriteLog(string message)
         {

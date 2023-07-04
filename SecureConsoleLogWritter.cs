@@ -1,19 +1,19 @@
 ﻿namespace NapilnikTask3
 {
-    class SecureConsoleLogWritter : ILogger
+    public class SecureConsoleLogWritter : ILogger
     {
-        private ConsoleLogWritter _writer;
+        private ConsoleLogWritter _writter;
 
         public SecureConsoleLogWritter(ConsoleLogWritter writer)
         {
-            _writer = writer;
+            _writter = writer;
         }
 
         public void WriteLog(string message)
         {
             if (DateTime.Now.DayOfWeek == DayOfWeek.Friday)
             {
-               _writer.WriteLog(message);
+               _writter.WriteLog(message);
             }
         }
     }
